@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "soulmolecule5"
+    }
+  },
+  "defaultProject": "soulmolecule5",
+  "cli": {
+    "analytics": "f00a4212-b561-4414-93e2-497255e5adb7"
+  }
 }
