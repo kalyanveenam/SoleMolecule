@@ -3,7 +3,9 @@
 @import url(https://fonts.googleapis.com/css?family=Shadows + Into + Light);
 html,
 body {
-  background: #333 url("https://codepen.io/images/classy_fabric.png");
+background-color: #FAFFFF;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
 }
 
 .slides {
@@ -13,6 +15,10 @@ body {
   display: block;
   margin: 0 auto;
   position: relative;
+  border-radius: 0.5px;
+  border-color: #0a4a57;
+  border-style: solid;
+  border-width: 0px;
 }
 
 .slides * {
@@ -21,7 +27,7 @@ body {
   -moz-user-select: none;
   -khtml-user-select: none;
   -webkit-user-select: none;
-  -webkit-touch-callout: none;
+
 }
 
 .slides input {
@@ -29,6 +35,7 @@ body {
 }
 
 .slide-container {
+
   display: block;
 }
 
@@ -132,11 +139,11 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 }
 
 h1 {
-  
+ color:#000000;
   text-transform: uppercase;
- 
-  font-family: cursive}
+ }
 p {
+  color:#000000;
   text-align: justify;
 }
 section {
@@ -197,13 +204,14 @@ section:after {
  
 .cont {
   height: 200px;
+  width: 100%;
   position: relative;
 }
 
 .sub-main {
   margin: 0;
   position: absolute;
-  left: 50%;
+  left: 45%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -211,8 +219,9 @@ section:after {
 /*Button Three*/
 .button-three {
   position: relative;
-  background-color: #f39c12;
+  background-color: #0a4a57;
   border: none;
+  color:#ffffff;
   padding: 20px;
   width: 200px;
   text-align: center;
@@ -246,4 +255,13 @@ section:after {
   margin: 0;
   opacity: 1;
   transition: 0s;
+}
+
+section{
+  width: 80%;
+  left: 10%;
+  padding-top:1%;
+  padding-bottom: 1%;
+  border-radius: 10px;
+  background-image: url("../../assets/textbg.jpg");
 }
