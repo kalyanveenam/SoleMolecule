@@ -1,5 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Indie + Flower);
 @import url(https://fonts.googleapis.com/css?family=Varela + Round);
-
+@import url(https://fonts.googleapis.com/css?family=Shadows + Into + Light);
 html,
 body {
   background: #333 url("https://codepen.io/images/classy_fabric.png");
@@ -34,8 +35,9 @@ body {
 .slide {
   top: 0;
   opacity: 0;
-  width: 1009px;
-  height: 420px;
+  width: 80%;
+  left:10%;
+  height: 100%;
   display: block;
   position: absolute;
   text-align: center;
@@ -127,4 +129,121 @@ input#img-4:checked ~ .nav-dots label#img-dot-4,
 input#img-5:checked ~ .nav-dots label#img-dot-5,
 input#img-6:checked ~ .nav-dots label#img-dot-6 {
   background: rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  
+  text-transform: uppercase;
+ 
+  font-family: cursive}
+p {
+  text-align: justify;
+}
+section {
+  display: flex;
+  flex-direction: columns;
+  height: 100%;
+  position: relative;
+}
+section:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-size: cover;
+  opacity: 0.8;
+}
+
+@mixin setBtn($borderColor, $bgColor, $txtColor) {
+  border: 1px solid $borderColor;
+  background: $bgColor;
+  color: $txtColor;
+}
+.intro {
+  margin: auto;
+  width: 80%;
+  position: relative;
+  z-index: 1;
+}
+.btn {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: 1.2em 3em;
+  border-radius: 2px;
+  @include setBtn($clouds, $strongClouds, $clouds);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.btn:hover {
+  @include setBtn($strongDark, $dark, $light);
+}
+.btn:focus {
+  @include setBtn($strongDark, $strongDark, $light);
+}
+
+@media only screen and (max-width: 800px) {
+  .intro {
+    width: 80%;
+  }
+}
+ 
+.cont {
+  height: 200px;
+  position: relative;
+}
+
+.sub-main {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/*Button Three*/
+.button-three {
+  position: relative;
+  background-color: #f39c12;
+  border: none;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.button-three:hover {
+  background: #fff;
+  box-shadow: 0px 2px 10px 5px #97b1bf;
+  color: #000;
+}
+
+.button-three:after {
+  content: "";
+  background: #f1c40f;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.button-three:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
 }

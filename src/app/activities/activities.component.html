@@ -1,75 +1,40 @@
-<<<<<<< HEAD
-<h3>test works!</h3>
-=======
+<div *ngFor="let activity of activities">
 <ul>
-    
-    <li class="card">
-        <img 
-            href="#" 
-            class="featured-image" 
-            src='../../assets/kayak.jpg'/>
-        <article class="card-body">
-            <header>
-                    <div class="title">
-                        <h3>Kayaking</h3>
-                    </div>
-                    <p class="meta">
-                        <span class="author">Utilidata</span>
-                        <span> | </span>
-                        <time class="updated" datetime="" itemprop="datePublished">July 27, 2017</time>
-                    </p>
-            </header>
-        </article>
-      
-    </li>
-  <br />
-  <br />
-    <li class="card">
-        <img 
-            href="#" 
-            class="featured-image" 
-            src='../../assets/fishing.jpg'/>
-        <article class="card-body">
-            <header>
-                    <div class="title">
-                        <h3>Fish your way</h3>
-                    </div>
-                    <p class="meta">
-                        <span class="author">Utilidata</span>
-                        <span> | </span>
-                        <time class="updated" datetime="" itemprop="datePublished">July 27, 2017</time>
-                    </p>
-            </header>
-        </article>
-      
-    </li>
-
-    <br />
-  <br />
-    <li class="card">
-        <img 
-            href="#" 
-            class="featured-image" 
-            src='../../assets/drinks.jpeg'/>
-        <article class="card-body">
-            <header>
-                    <div class="title">
-                        <h3>Hang in and have some drinks</h3>
-                    </div>
-                    <p class="meta">
-                        <span class="author">Utilidata</span>
-                        <span> | </span>
-                        <time class="updated" datetime="" itemprop="datePublished">July 27, 2017</time>
-                    </p>
-            </header>
-        </article>
-      
-    </li>
-<br /><br/>
+       <li class="card">
+  <img href="#" class="featured-image" src="{{activity.image}}" />
+  <article class="card-body">
+    <header>
+      <div class="title">
+          <br/>
+          <br/>
+        <h3>{{activity.ActivityName}}</h3>
+        <br>
+      </div>
+      <p class="meta">
+        <span class="author">Utilidata</span>
+        <span> | </span>
+        <time class="updated" datetime="" itemprop="datePublished"
+          >July 27, 2017</time
+        >
+      </p>
+    </header>
+  </article>
+</li>
+</ul>
+ 
+</div>
+<div class="text">
+  <p>Make your goa trip</p>
+  <p>
+    <span class="word belize">wonderful.</span>
+    <span class="word pomegranate">refreshing.</span>
+    <span class="word green">memorable.</span>
+    <span class="word midnight">cheap.</span>
+  </p>
+</div>
+<br /><br />
 <div class="container">
-    <div class="center">
-      <button>Book Now</button>
-    </div>
+  <div class="center">
+    <button type="button" class="btn btn-secondary btn-lg">Book Now</button>
   </div>
-    </ul>
->>>>>>> f2a4939faa21f87123ec64fdbbc20144397be0da
+</div>
