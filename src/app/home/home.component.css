@@ -247,3 +247,8 @@ section:after {
   opacity: 1;
   transition: 0s;
 }
+.carousel{
+  margin-top: 1%;
+  width: 50%;
+  height: 50%;
+}
