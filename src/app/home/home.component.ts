@@ -21,29 +21,6 @@ export class HomeComponent implements OnInit {
     "infinite": false
   };
 
-  addSlide() {
-    this.slides.push(488)
-  }
-
-  removeSlide() {
-    this.slides.length = this.slides.length - 1;
-  }
-
-  slickInit(e) {
-    console.log('slick initialized');
-  }
-
-  breakpoint(e) {
-    console.log('breakpoint');
-  }
-
-  afterChange(e) {
-    console.log('afterChange');
-  }
-
-  beforeChange(e) {
-    console.log('beforeChange');
-  }
   constructor() { }
 
   ngOnInit(): void {
