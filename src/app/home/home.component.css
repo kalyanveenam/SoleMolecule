@@ -203,7 +203,7 @@ section:after {
 .sub-main {
   margin: 0;
   position: absolute;
-  left: 50%;
+  left: 45%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -246,4 +246,9 @@ section:after {
   margin: 0;
   opacity: 1;
   transition: 0s;
+}
+.carousel{
+  margin-top: 1%;
+  width: 50%;
+  height: 50%;
 }
