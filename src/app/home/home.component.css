@@ -8,7 +8,7 @@ body {
 
 .slides {
   padding: 0;
-  width: 1909px;
+  width: 909px;
   height: 470px;
   display: block;
   margin: 0 auto;
@@ -132,9 +132,10 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 }
 
 h1 {
+  
   text-transform: uppercase;
-  font-family: "Lobster";
-}
+ 
+  font-family: cursive}
 p {
   text-align: justify;
 }
