@@ -1,10 +1,24 @@
-<!-- You can now use your library component in app.component.html -->
-<ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)"
-(breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
-<div ngxSlickItem *ngFor="let slide of slides">
-
-  <img src="../../assets/beach{{slide}}.jpg" alt="" width="100%" height="50%">
-</div>
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no"
+/>
+<ngx-slick-carousel
+  class="carousel"
+  #slickModal="slick-carousel"
+  [config]="slideConfig"
+  (init)="slickInit($event)"
+  (breakpoint)="breakpoint($event)"
+  (afterChange)="afterChange($event)"
+  (beforeChange)="beforeChange($event)"
+>
+  <div ngxSlickItem *ngFor="let slide of slides">
+    <img
+      src="../../assets/beach{{ slide }}.jpg"
+      alt=""
+      width="100%"
+      height="50%"
+    />
+  </div>
 </ngx-slick-carousel>
 <link
   href="http://fonts.googleapis.com/css?family=Oleo+Script"
@@ -12,24 +26,117 @@
   type="text/css"
 />
 <br /><br />
-<section>
-  <div class="intro">
-    <h1>Travel to unviel the true beauty of goa..</h1>
+<div class="body-data">
+  <div class="para">
+    <div class="intro">
+      <h1 class="quote">
+        Travel to unviel the true beauty of
+        <div class="place">Goa</div>
+      </h1>
+      <p>
+        Goa is synonymous to many things that are indicative of a life without
+        worries and carefree measures. Be it the parties, the casinos, the flea
+        markets or the beach shacks—Goa is to India what Ibiza is to the world.
+        Here, we take you on a trail along the best beaches in Goa. These places
+        are varied in nature and a visit here will expose you to the best beach
+        in Goa for family and best beaches in Goa for couples.
+      </p>
+    </div>
+  </div>
+  <br /><br />
+  <div class="cont">
+    <div class="sub-main"></div>
+  </div>
+
+  <div *ngFor="let activity of activities">
+    <ul>
+      <li class="card">
+        <img href="#" class="featured-image" src="{{ activity.image }}" />
+        <article class="card-body">
+          <header>
+            <div class="title">
+              <br />
+              <br />
+              <h3>{{ activity.ActivityName }}</h3>
+              <br />
+            </div>
+            <p class="meta">
+              <span class="author">Utilidata</span>
+              <span> | </span>
+              <time class="updated" datetime="" itemprop="datePublished"
+                >July 27, 2017</time
+              >
+            </p>
+          </header>
+        </article>
+      </li>
+    </ul>
+  </div>
+  <div class="text">
     <p>
-      Goa is synonymous to many things that are indicative of a life without
-      worries and carefree measures. Be it the parties, the casinos, the flea
-      markets or the beach shacks—Goa is to India what Ibiza is to the world.
-      Here, we take you on a trail along the best beaches in Goa. These places
-      are varied in nature and a visit here will expose you to the best beach in
-      Goa for family and best beaches in Goa for couples.
+      <span class="word belize">wonderful.</span>
+      <span class="word pomegranate">refreshing.</span>
+      <span class="word green">memorable.</span>
+      <span class="word midnight">cheap.</span>
     </p>
   </div>
-</section>
-<br /><br /><br />
-<div class="cont">
-  <div class="sub-main">
-    <button class="button-three" [routerLink]="['/activities']">
-      <span>Explore me</span>
-    </button>
+  <br /><br />
+  <div class="container">
+    <div class="center">
+      <button type="button" class="btn btn-secondary btn-lg">Packages</button>
+    </div>
   </div>
 </div>
+
+<footer class="footer-distributed">
+  <div class="footer-left">
+    <h3>Kingline<span>cruises</span></h3>
+
+    <p class="footer-links">
+      <a href="#" class="link-1">Home</a>
+
+      <a href="#">Blog</a>
+
+      <a href="#">Pricing</a>
+
+      <a href="#">About</a>
+
+      <a href="#">Faq</a>
+
+      <a href="#">Contact</a>
+    </p>
+
+    <p class="footer-company-name">Kinglinevruises© 2020</p>
+  </div>
+
+  <div class="footer-center">
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span>This wensite is devoloped by </span> KK Projects</p>
+    </div>
+
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>+91 9959807730, 7702696625</p>
+    </div>
+
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:kkprojects@gmail.com">support@company.com</a></p>
+    </div>
+  </div>
+
+  <div class="footer-right">
+    <p class="footer-company-about">
+      <span>About the company</span>
+     Kingline cruises provides various tourism packages for people who want to enjoy their holidays in goa.
+    </p>
+
+    <div class="footer-icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+    </div>
+  </div>
+</footer>
