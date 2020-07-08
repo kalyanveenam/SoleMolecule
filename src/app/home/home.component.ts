@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Directive, HostListener } from '@angular/core';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
     nextArrow: "<div class='nav-btn next-slide'></div>",
     prevArrow: "<div class='nav-btn prev-slide'></div>",
     dots: true,
+    autoplaySpeed: 2000,
     autoplay: true,
     infinite: false,
   };
@@ -50,5 +51,18 @@ export class HomeComponent implements OnInit {
   beforeChange(e) {
     console.log('beforeChange');
   }
-  ngOnInit(): void {}
+  ngOnInit(): void {
+
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(e) {
+     if (window.pageYOffset > 10) {
+       let element = document.getElementById('navbar');
+       element.classList.add('sticky');
+     } else {
+      let element = document.getElementById('navbar');
+        element.classList.remove('sticky'); 
+     }
+  }
 }

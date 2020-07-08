@@ -1,3 +1,4 @@
+
 <meta
   name="viewport"
   content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no"
@@ -48,7 +49,7 @@
     <div class="sub-main"></div>
   </div>
 
-  <div *ngFor="let activity of activities">
+  <div *ngFor="let activity of activities" class = "activities">
     <ul>
       <li class="card">
         <img href="#" class="featured-image" src="{{ activity.image }}" />
@@ -57,7 +58,7 @@
             <div class="title">
               <br />
               <br />
-              <h3>{{ activity.ActivityName }}</h3>
+              <h3>{{activity.ActivityName}}</h3>
               <br />
             </div>
             <p class="meta">
@@ -80,11 +81,12 @@
       <span class="word midnight">cheap.</span>
     </p>
   </div>
-  <br /><br />
+  <br /><br /><br />
   <div class="container">
     <div class="center">
-      <button type="button" class="btn btn-secondary btn-lg">Packages</button>
-    </div>
+      <button class="button-three" [routerLink]="['/packages']">
+        <span>Book Now</span>
+        </button>
   </div>
 </div>
 
@@ -133,10 +135,11 @@
     </p>
 
     <div class="footer-icons">
-      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="# "><i ></i></a>
       <a href="#"><i class="fa fa-twitter"></i></a>
       <a href="#"><i class="fa fa-linkedin"></i></a>
       <a href="#"><i class="fa fa-github"></i></a>
     </div>
   </div>
 </footer>
+

@@ -21,6 +21,18 @@ body {
   -webkit-touch-callout: none;
 }
 
+.activities{
+background-color:#009dff;
+border-radius: 10px;
+border-width: 2em;
+width: 80%;
+margin-left: 10%;
+margin-right: 10%;
+}
+
+.fb{
+  background-image: url(../../assets/facebook.png);
+}
 .slides input {
   display: none;
 }
@@ -142,17 +154,6 @@ p {
   height: 100%;
   position: relative;
 }
-section:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-  background-size: cover;
-  opacity: 0.8;
-}
 
 @mixin setBtn($borderColor, $bgColor, $txtColor) {
   border: 1px solid $borderColor;
@@ -245,7 +246,7 @@ section:after {
   transition: 0s;
 }
 .carousel {
-  margin-top: 1%;
+margin-top: 5%;
   width: 60%;
   height: 50%;
   box-shadow: 20px 20px 20px 20px #888888;
@@ -413,13 +414,14 @@ a.chip.large:active {
 
 .container {
   height: 200px;
+  width: 100%;
   position: relative;
 }
 
 .center {
   margin: 0;
   position: absolute;
-  left: 50%;
+  left: 40%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -508,16 +510,6 @@ p {
   font-family: Open Sans;
 }
 
-section {
-  width: 100%;
-  display: inline-block;
-  background: #333;
-  height: 50vh;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: underline;
-}
 
 .footer-distributed {
   background: #666;
@@ -706,17 +698,12 @@ section {
   font-size: larger;
 }
 .body-data {
-  background-color: #dad5d5;
+
 }
 .quote {
-  background-color:  rgb(182, 181, 182);
+  z-index: 0.2;
+  text-align: center;
   opacity: 20px;
 }
-.place:hover {
-  color: rgb(224, 83, 28);
- 
-}
-.quote:hover {
- background-color: rgb(182, 181, 182);
-  opacity: 20px;
-}
+
+
