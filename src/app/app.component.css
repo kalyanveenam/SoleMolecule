@@ -1,118 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
 
-* {
-  box-sizing: border-box;
-}
-body {
-  background-color: #333;
-  background: #191919;
-  font-family: "Montserrat", sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  min-height: 100vh;
-}
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-h2,
-h3,
-a {
+.navbar-custom {
   color: #ffffff;
-}
-
-a {
-  color:#ffffff;
-  text-decoration: none;
-}
-
-h1 a{
-  color: #ffffff;
-  font: normal 30px "Open Sans", cursive;
-  margin: 0;
-}
-
-h1 span {
-  color: lightseagreen;
-  font: normal 30px "Open Sans";
-}
-
-.logo {
-  margin: 0;
-  font-size: 1.45em;
-}
-
-.main-nav {
-  margin-top: 5px;
-}
-.logo a,
-.main-nav a {
-  padding: 10px 15px;
-  text-align: center;
-  display: block;
-}
-
-h1 a {
-  color:#ffffff;
-}
-h1 a span{
-  color: lightseagreen;
-}
-.main-nav li a {
-  color: #ffffff;
-  font-size: 0.99em;
-}
-
-.main-nav a:hover {
-  background-color: #d1741c;
-  color: #f9fbfb;
-}
-
-.header {
-  padding-top: 0.1em;
-  padding-bottom: 0.1em;
-  border: 1px solid #a2a2a2;
-  top:0;
-  max-height: 10vh;
-  width: 100%;
+  background-color: #666666;
   position: fixed;
-  background: #666666;
-  -webkit-box-shadow: 10px 30px 34px 10px rgba(76, 74, 238, 0.75);
-  -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  z-index:500; 
-  width: 100vw;
+  z-index: 500;
+  top: 0px;
+  width: 100%;
 }
-
-/* ================================= 
-  Media Queries
-==================================== */
-
-@media (min-width: 769px) {
-  .header,
-  .main-nav {
-    display: flex;
-  }
-  .header {
-
-    flex-direction: column;
-    align-items: center;
-
-    width: 100%;
-  }
+.navbar navbar-expand-lg navbar-light bg-light navbar-custom {
+  background-color: rgb(246, 243, 243);
 }
-
-@media (min-width: 1025px) {
-  .header {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+.collapse navbar-collapse {
+  background-color: rgb(223, 223, 223);
 }
-
-li a{
-  color: white;
+.firstname {
+  color: rgb(243, 243, 243);
+  font-family: "Pacifico";
+}
+h4 {
+  max-width: 10vh;
+  font-family: cursive;
+}
+.items {
+  float: right;
+  background-color: transparent;
+}
+.nav-link:hover {
+  background-color: orange;
+}
+.lastName {
+  color: aqua;
 }
