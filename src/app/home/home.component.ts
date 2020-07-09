@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
   constructor() {}
   public activities = [
     {
-      ActivityName: 'kayaking',
+      ActivityName: 'Kayaking',
       image: '../../assets/kayak.jpg',
       Description: 'This is sample description',
     },
