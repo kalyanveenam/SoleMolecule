@@ -1,5 +1,6 @@
 html,
 body {
+  overflow-x: hidden;
   background: #333 url("https://codepen.io/images/classy_fabric.png");
 }
 
@@ -21,14 +22,29 @@ body {
   -webkit-touch-callout: none;
 }
 
+@media(min-width :768px)
+{
 .activities{
 
 border-radius: 10px;
 border-width: 2em;
-width: 80%;
-margin-left: 10%;
-margin-right: 10%;
+width: 80vw;
+margin-left: 10vw;
+margin-right: 10vw;
+
 }
+
+}
+.activities{
+
+  border-radius: 10px;
+  border-width: 2em;
+
+
+  
+  }
+
+
 
 .fb{
   background-image: url(../../assets/facebook.png);
@@ -161,8 +177,10 @@ p {
   color: $txtColor;
 }
 .intro {
+
   margin: auto;
   width: 80%;
+  color: black;
   position: relative;
   z-index: 1;
 }
@@ -207,12 +225,14 @@ p {
 }
 
 /*Button Three*/
+@media(min-width :768px)
+{
 .button-three {
   position: relative;
   background-color: #f39c12;
   border: none;
   padding: 20px;
-  width: 200px;
+  width: 10vw;
   text-align: center;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
@@ -220,6 +240,37 @@ p {
   overflow: hidden;
 }
 
+
+}
+.container {
+  height: 200px;
+  width: 100vw;
+text-align: center;
+  position: relative;
+}
+
+.center {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+}
+@media(max-width :767px)
+{
+.button-three {
+  position: relative;
+  background-color: #f39c12;
+  border: none;
+  padding: 20px;
+  width: 40vw;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+}
 .button-three:hover {
   background: #fff;
   box-shadow: 0px 2px 10px 5px #97b1bf;
@@ -258,14 +309,27 @@ margin-top: 15vh;
     width: 100%;
     height: 100%;
   }
+  .card {
+    display: flex;
+    height: 70vh;
+    width: 85vw;
+    overflow-y: scroll;
+    flex-direction: column;
+  }
 }
-.card {
-  box-shadow: 0 0px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1);
-  background: #fff;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
+
+@media (min-width: 768px) {
+  .card {
+    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    height: 30vh;
+    overflow: scroll;
+    flex-direction: column;
+  }
 }
+
 .card .card-body {
   display: flex;
   flex-flow: row wrap;
@@ -288,7 +352,7 @@ margin-top: 15vh;
   border-top-right-radius: 5px;
   overflow: hidden;
   width: 100%;
-  height: 300px;
+  height: 30vh;
 }
 
 @media only screen and (min-width: 768px) {
@@ -413,19 +477,6 @@ a.chip.large:active {
   color: black;
 }
 
-.container {
-  height: 200px;
-  width: 100%;
-  position: relative;
-}
-
-.center {
-  margin: 0;
-  position: absolute;
-  left: 40%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
 
 /* Animation Text */
 @import url(https://fonts.googleapis.com/css?family=Open + Sans:600);
@@ -433,6 +484,7 @@ a.chip.large:active {
 body {
   font-weight: 600;
   font-size: 40px;
+  overflow-x: hidden;
 }
 
 .text {
@@ -443,6 +495,10 @@ body {
   margin-left: -225px;
   height: 40px;
   margin-top: -20px;
+}
+
+.title{
+  overflow:hidden;
 }
 
 p {
@@ -544,6 +600,7 @@ p {
 }
 
 .footer-distributed h3 span {
+
   color: lightseagreen;
 }
 
@@ -693,19 +750,21 @@ p {
 }
 
 .place {
-  color: rgb(10, 10, 10);
+  color: #ffffff;
   font-family: cursive;
   font: bold;
   font-size: larger;
 }
 .body-data {
-  padding-top: 5vh;;
+  padding-top: 5vh;
+  width: 100;
 background-color:#149ECC;
 }
 .quote {
   z-index: 0.2;
   text-align: center;
   opacity: 20px;
+  color: white;
 }
 
 
