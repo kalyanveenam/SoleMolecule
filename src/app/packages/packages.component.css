@@ -12,44 +12,22 @@
 
 html, body {
   height: 100%;
-
 }
 
 body {
-  display: grid;
   background-color:#149ECC;
+  display: grid;
   place-items: center;
+  height: 100vh;
 }
-li{
-margin-left: 0px;
-padding-left: 0;
-text-align: left;
-display: inline-block;
-width: auto;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-@media (max-width: 767px) {
-  .page-content {
-    display: grid;
-    grid-gap: 1rem;
-    padding: 1rem;
-    max-width: 1024px;
-    margin:  0;
-    font-family: var(--font-sans);
-  }
-}
-@media(min-width : 768px){
-.page-content  {
 
+.page-content {
   display: grid;
   grid-gap: 1rem;
   padding: 1rem;
   max-width: 1024px;
-  margin: 35vh auto 25vh auto;
+  margin: 0 auto;
   font-family: var(--font-sans);
-}
 }
 @media (min-width: 600px) {
   .page-content {
@@ -61,9 +39,7 @@ width: auto;
     grid-template-columns: repeat(4, 1fr);
   }
 }
-h3{
-  color:black;
-}
+
 .card {
   position: relative;
   display: -webkit-box;
@@ -80,7 +56,7 @@ h3{
 }
 @media (min-width: 600px) {
   .card {
-    height: 40vh;
+    height: 350px;
   }
 }
 .card:before {
@@ -116,8 +92,10 @@ h3{
   transition: transform calc(var(--d) * 2) var(--e);
   transition: transform calc(var(--d) * 2) var(--e), -webkit-transform calc(var(--d) * 2) var(--e);
 }
+
+
 .card:nth-child(1):before {
-  background-image: url(https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  background-image: url('../../assets/kayak.jpg');
 }
 .card:nth-child(2):before {
   background-image: url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
@@ -166,17 +144,20 @@ h3{
 .btn {
   cursor: pointer;
   margin-top: 1.5rem;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1.2rem;
   font-size: 0.65rem;
   font-weight: bold;
   letter-spacing: 0.025rem;
   text-transform: uppercase;
-  color: white;
-  background-color: black;
+  color: black;
+  border-width: 4px;
+  background-color: white;
   border: none;
 }
+
 .btn:hover {
   background-color: #0d0d0d;
+  color: white;
 }
 .btn:focus {
   outline: 1px dashed yellow;

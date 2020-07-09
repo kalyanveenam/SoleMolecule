@@ -311,7 +311,7 @@ p {
     background: #fff;
     border-radius: 5px;
     display: flex;
-    height: 30vh;
+    height: 300px;
     overflow: scroll;
     flex-direction: column;
   }
@@ -331,16 +331,35 @@ p {
 .card .chips {
   align-self: flex-end;
 }
-.card .featured-image {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  overflow: hidden;
-  width: 100%;
-  height: 30vh;
+
+@media (min-width: 768px) {
+  .card .featured-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+  }
 }
+
+
+@media (max-width: 767px) {
+  .card .featured-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    height: 60vw;
+  }
+}
+
+
 
 @media only screen and (min-width: 768px) {
   .card {
