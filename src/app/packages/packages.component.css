@@ -17,7 +17,7 @@ html, body {
 
 body {
   display: grid;
-
+  background-color:#149ECC;
   place-items: center;
 }
 li{
