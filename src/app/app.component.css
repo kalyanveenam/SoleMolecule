@@ -24,10 +24,17 @@ h4 {
 }
 .items {
   float: right;
-  background-color: transparent;
+
 }
 .nav-link:hover {
-  background-color: orange;
+  background-color: skyblue;
+}
+link{
+  color: aqua !important;
+}
+nav .navbar-nav li a{
+  color: aqua !important;
+  font-weight: bold;
 }
 .lastName {
   color: aqua;
