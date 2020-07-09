@@ -22,7 +22,7 @@ body {
 }
 
 .activities{
-background-color:#009dff;
+
 border-radius: 10px;
 border-width: 2em;
 width: 80%;
@@ -246,9 +246,10 @@ p {
   transition: 0s;
 }
 .carousel {
-margin-top: 5%;
+margin-top: 15vh;
   width: 60%;
   height: 50%;
+  position: relative;
   box-shadow: 20px 20px 20px 20px #888888;
 }
 
@@ -698,7 +699,8 @@ p {
   font-size: larger;
 }
 .body-data {
-
+  padding-top: 5vh;;
+background-color:#149ECC;
 }
 .quote {
   z-index: 0.2;
