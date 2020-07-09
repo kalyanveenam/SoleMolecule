@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
 html,
 body {
   overflow-x: hidden;
@@ -22,31 +24,21 @@ body {
   -webkit-touch-callout: none;
 }
 
-@media(min-width :768px)
-{
-.activities{
-
-border-radius: 10px;
-border-width: 2em;
-width: 80vw;
-margin-left: 10vw;
-margin-right: 10vw;
-
+@media (min-width: 768px) {
+  .activities {
+    border-radius: 10px;
+    border-width: 2em;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
 }
-
-}
-.activities{
-
+.activities {
   border-radius: 10px;
   border-width: 2em;
+}
 
-
-  
-  }
-
-
-
-.fb{
+.fb {
   background-image: url(../../assets/facebook.png);
 }
 .slides input {
@@ -157,12 +149,13 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 }
 
 h1 {
-  text-transform: uppercase;
-
-  font-family: cursive;
+  font-family: 'Raleway';
 }
 p {
   text-align: justify;
+}
+.para-1{
+  font-family: 'Raleway';
 }
 .para {
   display: flex;
@@ -177,7 +170,6 @@ p {
   color: $txtColor;
 }
 .intro {
-
   margin: auto;
   width: 80%;
   color: black;
@@ -225,27 +217,24 @@ p {
 }
 
 /*Button Three*/
-@media(min-width :768px)
-{
-.button-three {
-  position: relative;
-  background-color: #f39c12;
-  border: none;
-  padding: 20px;
-  width: 10vw;
-  text-align: center;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  text-decoration: none;
-  overflow: hidden;
-}
-
-
+@media (min-width: 768px) {
+  .button-three {
+    position: relative;
+    background-color: #f39c12;
+    border: none;
+    padding: 20px;
+    width: 10vw;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+  }
 }
 .container {
   height: 200px;
   width: 100vw;
-text-align: center;
+  text-align: center;
   position: relative;
 }
 
@@ -255,21 +244,19 @@ text-align: center;
   text-align: center;
   position: absolute;
 }
-@media(max-width :767px)
-{
-.button-three {
-  position: relative;
-  background-color: #f39c12;
-  border: none;
-  padding: 20px;
-  width: 40vw;
-  text-align: center;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  text-decoration: none;
-  overflow: hidden;
-}
-
+@media (max-width: 767px) {
+  .button-three {
+    position: relative;
+    background-color: #f39c12;
+    border: none;
+    padding: 20px;
+    width: 40vw;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+  }
 }
 .button-three:hover {
   background: #fff;
@@ -297,7 +284,7 @@ text-align: center;
   transition: 0s;
 }
 .carousel {
-margin-top: 15vh;
+  margin-top: 15vh;
   width: 60%;
   height: 50%;
   position: relative;
@@ -361,6 +348,8 @@ margin-top: 15vh;
     max-height: 279px;
   }
   .card h3 {
+    font-family: 'Raleway';
+ 
     font-size: calc(100% + 1vw);
   }
   .card .featured-image {
@@ -374,6 +363,8 @@ margin-top: 15vh;
 @media only screen and (min-width: 1280px) {
   .card h3 {
     font-size: 32px;
+    
+    font-family: 'Raleway';
   }
 }
 * {
@@ -398,11 +389,11 @@ h3 {
 .meta {
   color: #555;
   font-size: 16px;
-  text-transform: uppercase;
+
 }
 
 .author {
-  text-transform: uppercase;
+  font-family: 'Raleway';
 }
 
 ul {
@@ -477,7 +468,6 @@ a.chip.large:active {
   color: black;
 }
 
-
 /* Animation Text */
 @import url(https://fonts.googleapis.com/css?family=Open + Sans:600);
 
@@ -497,8 +487,8 @@ body {
   margin-top: -20px;
 }
 
-.title{
-  overflow:hidden;
+.title {
+  overflow: hidden;
 }
 
 p {
@@ -567,7 +557,6 @@ p {
   font-family: Open Sans;
 }
 
-
 .footer-distributed {
   background: #666;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -598,9 +587,12 @@ p {
   font: normal 36px "Open Sans", cursive;
   margin: 0;
 }
+.aname{
+  font-family: 'Raleway';
+ color: #2980b9;
+}
 
 .footer-distributed h3 span {
-
   color: lightseagreen;
 }
 
@@ -758,13 +750,12 @@ p {
 .body-data {
   padding-top: 5vh;
   width: 100;
-background-color:#149ECC;
+  background-color: #149ecc;
 }
 .quote {
   z-index: 0.2;
   text-align: center;
   opacity: 20px;
   color: white;
+  font-family: "Droid Sans";
 }
-
-

@@ -26,17 +26,17 @@ export class HomeComponent implements OnInit {
     {
       ActivityName: 'Kayaking',
       image: '../../assets/kayak.jpg',
-      Description: 'This is sample description',
+      Description: 'Experience the fresh air and refreshing water at the best possible price.We promise you a thrilling experience that you will remember for lifetime. Click on explore to know more',
     },
     {
       ActivityName: 'Fish your way',
       image: '../../assets/fishing.jpg',
-      Description: 'This is sample description',
+      Description: 'Imagine a day filled spend on water doing nothing but fishing.We provide the kit, assure your day is fun filled.',
     },
     {
       ActivityName: 'Hang in and have some drinks',
       image: '../../assets/drinks.jpeg',
-      Description: 'This is sample description',
+      Description: 'After spending time at fishing and kayaking, everyone is up for a beer. We provide that as well. So what are you waiting for, click on book now and grab your spot',
     },
   ];
   slickInit(e) {
