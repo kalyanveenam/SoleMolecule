@@ -783,3 +783,18 @@ p {
   color: white;
   font-family: "Droid Sans";
 }
+
+.fb{
+  background-image: url(../../assets/facebook.png);
+  background-size: contain;
+}
+
+.twitter{
+  background-image: url(../../assets/twitter.png);
+  background-size: contain;
+}
+
+.insta{
+  background-image: url(../../assets/insta.png);
+  background-size: contain;
+}
