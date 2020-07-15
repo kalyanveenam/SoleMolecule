@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
     {
       ActivityName: 'Fish your way',
       image: '../../assets/fishing.jpg',
-      Description: 'Imagine a day filled spend on water doing nothing but fishing.We provide the kit, assure your day is fun filled.',
+      Description: 'Cause, why not spend some fun time fishing? ',
     },
     {
       ActivityName: 'Hang in and have some drinks',

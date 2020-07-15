@@ -7,7 +7,7 @@ import { PackagesComponent } from './packages/packages.component';
 const routes: Routes = [
   { path: 'packages', component: PackagesComponent },
   { path: 'home', component: HomeComponent },
-  {path: '',redirectTo:'/home', pathMatch:'full'}
+  { path: '', component: HomeComponent }
 ];
 
 @NgModule({
