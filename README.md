@@ -30,3 +30,15 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 Add <router-outlet></router-outlet> tag in app.component.html file
 Now you can add router like [routerLink]="['/home']"
+
+##bootstrap code for data-toggler
+<button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"></button>
+<span class="navbar-toggler-icon"></span>
+</button>
