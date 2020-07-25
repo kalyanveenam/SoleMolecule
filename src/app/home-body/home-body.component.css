@@ -1,0 +1,47 @@
+.body-data {
+    padding-top: 5vh;
+    width: 100;
+    background-color: #149ecc;
+  }
+  .para-1{
+    font-family: 'Raleway';
+  }
+  .para {
+    display: flex;
+    flex-direction: columns;
+    height: 100%;
+    position: relative;
+  }
+  
+  @mixin setBtn($borderColor, $bgColor, $txtColor) {
+    border: 1px solid $borderColor;
+    background: $bgColor;
+    color: $txtColor;
+  }
+  .intro {
+    margin: auto;
+    width: 80%;
+    color: black;
+    position: relative;
+    z-index: 1;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .intro {
+      width: 80%;
+    }
+  }
+  .quote {
+    z-index: 0.2;
+    text-align: center;
+    opacity: 20px;
+    color: white;
+    font-family: "Droid Sans";
+  }
+
+.place {
+    color: #ffffff;
+    font-family: cursive;
+    font: bold;
+    font-size: larger;
+  }

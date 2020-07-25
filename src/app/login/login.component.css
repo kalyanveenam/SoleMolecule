@@ -1,0 +1,19 @@
+.form-group {
+    width: 15vw;
+}
+
+.button {
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    left: 50%;
+}
+
+.alert {}
+
+span {
+    vertical-align: middle;
+    line-height: normal;
+}

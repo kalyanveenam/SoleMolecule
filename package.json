@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "ptb":"ng build && rm -r ../../SoulMolecule-Backend/frontend && cp -r dist/soulmolecule5 ../../SoulMolecule-Backend/frontend"
+    "ptb": "ng build && rm -r ../../../SoulMolecule-Backend/frontend && cp -r dist/soulmolecule5 ../../../SoulMolecule-Backend/frontend"
   },
   "private": true,
   "dependencies": {

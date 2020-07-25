@@ -1,0 +1,43 @@
+app-login {
+    position: absolute;
+    width: inherit;
+    left: 17vw;
+    top: 40%;
+}
+
+app-register {
+    position: absolute;
+    width: 50vw;
+    left: 50vw;
+    left: 67vw;
+    top: 30%;
+}
+
+body {
+    margin-top: 7vh;
+}
+
+.seperator {
+    border-left: 2px solid black;
+    height: 75vh;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 15vh;
+}
+
+.login {
+    position: absolute;
+    left: 20vw;
+    top: 14%;
+    max-width: 50vw;
+}
+
+.register {
+    max-width: 50vw;
+    position: absolute;
+    width: 50vw;
+    left: 50vw;
+    left: 70vw;
+    top: 14%;
+}

@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+.navbar-custom {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #5a5959;
+    position: fixed;
+    z-index: 500;
+    top: 0px;
+    height: 7vh;
+    width: 100%;
+}
+
+@media(min-width: 1001) {
+    .kingland-logo {
+        text-decoration: none;
+        position: relative;
+        left: 500px;
+        top: 0px;
+        font-size: 57px;
+        padding-bottom: 5px;
+        z-index: 15;
+    }
+}
+
+@media (min-width: 997px) {
+    .kingland-logo {
+        text-decoration: none;
+        position: relative;
+        left: 45vw;
+        top: 0px;
+        font-size: 37px;
+        padding-bottom: 5px;
+        z-index: 15;
+    }
+    /*this is responsible for movement of items in nav bar*/
+    .nav-items {
+        text-decoration: none !important;
+        position: relative;
+        right: 1vw;
+    }
+    .loginmenu {
+        float: right !important;
+        top: 100%;
+        left: 86%;
+    }
+    .packages {
+        text-decoration: none !important;
+    }
+}
+
+@media (min-width: 337px) and( max-width:996) {
+    .kingland-logo {
+        color: #ffffff !important;
+        position: absolute;
+        width: 50%;
+        height: 200px;
+        right: 5vw;
+        z-index: 15;
+    }
+    nav .navbar-nav li a {
+        color: #fafafa;
+        font-weight: bold;
+    }
+    .nav-items {
+        right: 800px;
+    }
+    .loginmenu {
+        float: right !important;
+        top: 100%;
+        left: 86%;
+        color: white;
+    }
+}
+
+@media (min-width: 997px) {
+    nav .navbar-nav li a {
+        color: #fafafa !important;
+        float: right;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 997px) {
+    #loginbutton {
+        float: right;
+        display: block;
+        position: relative;
+        left: 73vw;
+        color: rgb(218, 230, 230);
+    }
+}
+
+@media (min-width: 337px) and( max-width:996) {
+    #loginbutton {
+        display: none;
+        float: right;
+        position: relative;
+        left: 93vw;
+        color: rgb(29, 231, 231) !important;
+    }
+}
+
+.clickLogin {
+    background-color: #666666;
+    color: aliceblue;
+}
+
+.navbar-toggler-icon {
+    background-image: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff");
+}
+
+.firstname {
+    text-decoration: none;
+    color: rgb(243, 243, 243) !important;
+    font-family: cursive;
+}
+
+.lastName {
+    text-decoration: none;
+    color: aqua;
+    font-family: "Pacifico";
+}
+
+.LogoColor {
+    text-decoration: none !important;
+    color: #fdfdfd;
+}
+
+.loginBtn {
+    font-size: 14px;
+    color: rgb(224, 224, 224);
+}
