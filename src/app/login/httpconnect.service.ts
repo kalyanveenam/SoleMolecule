@@ -9,7 +9,7 @@ export class HttpConnect {
   }
   login=(email,password)=>{
     var requestBody={};
-    
+
   return this.http.post("http://localhost:3001/api/v1/user/login",JSON.stringify({email: email, password: password}),{headers:{'Content-Type':'application/json'}});
   
   }}

@@ -22,6 +22,10 @@
     }
 }
 
+app-logout {
+    width: 10vw;
+}
+
 @media (min-width: 997px) {
     .kingland-logo {
         text-decoration: none;
@@ -36,7 +40,6 @@
     .nav-items {
         text-decoration: none !important;
         position: relative;
-        right: 1vw;
     }
     .loginmenu {
         float: right !important;

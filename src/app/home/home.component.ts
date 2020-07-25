@@ -9,8 +9,9 @@ import { Component, OnInit, NgModule } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
-
+    console.log(localStorage.getItem('email'));
   }
+
   public activities = [
     {
       name: 'Kayaking',
