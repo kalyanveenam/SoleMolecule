@@ -1,23 +1,32 @@
-<form>
-    <div class="form-group">
-        <label for="name">Name</label>
-        <input class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter email">
-    </div>
-
-    <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>
-    <div class="form-group">
-        <label for="phone">Phone Number</label>
-        <input type="number" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="Enter Phone Number">
-    </div>
-    <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-    </div>
-    <div class="button">
-        <button type="submit" class="btn btn-primary">Register</button>
-    </div>
-</form>
+<div class="signupForm">
+  <section id="signup-box">
+    <h1>Create your account</h1>
+    <p>Join and book your holiday package now!</p>
+    <form
+      ngForm
+      #register="ngForm"
+      id="signup-form"
+      (ngSubmit)="submitForm(register.value)"
+    >
+      <label for="name">Name</label><br />
+      <input type="text" name="name" ngModel placeholder="Name" /><br />
+      <label for="nickname">email</label><br />
+      <input type="text" name="email" ngModel placeholder="Email" /><br />
+      <label for="email">phone Number</label><br />
+      <input
+        type="email"
+        name="phone"
+        ngModel
+        placeholder="Phone number"
+      /><br />
+      <label for="password">Password</label><br />
+      <input
+        type="password"
+        name="password"
+        ngModel
+        placeholder="Password"
+      /><br />
+      <button type="submit">SignUp</button>
+    </form>
+  </section>
+</div>
