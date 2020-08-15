@@ -4,43 +4,11 @@
       </button> Remove comment to show toggle bar-->
     <a class="navbar-brand mr-auto" [routerLink]="['/home']">KinglandCruises</a>
     <div class="collapse navbar-collapse " id="navbarSupportedContent ">
-        <ul class="navbar-nav ml-auto ">
-
-            <li *ngIf="!isLoggedIn " class="nav-item active ">
-                <button class="nav-link btn btn-info" [routerLink]="[ '/login'] " style="color: white; width:5vw;">Log In</button>
-            </li>
-            <li *ngIf="isLoggedIn" class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active d-none d-sm-block navbar_name" style="color: white;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Hi, {{name}}
-                </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">My Profile</a>
-                    <a class="dropdown-item" href="#">My Bookings</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" (click)="logout()">Log out</a>
-                </div>
-            </li>
+        <ul class="navbar-nav ml-auto">
+            <app-logout isMobile="false"></app-logout>
         </ul>
     </div>
     <ul class="nav navbar-nav pull-left ml-auto d-xl-none d-lg-none" style="max-height: 5vh;">
-
-        <li *ngIf="!isLoggedIn " class="nav-item active ">
-            <a class="nav-link " [routerLink]="[ '/login'] " style="color: white;">Log In</a>
-        </li>
-        <div class="nav-item dropdown">
-            <li *ngIf="isLoggedIn" class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
-             Hi, {{name}}
-            </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-
-                    <a class="dropdown-item" href="#">My Profile</a>
-                    <a class="dropdown-item" href="#">My Bookings</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" (click)="logout()">Log out</a>
-                </div>
-            </li>
-        </div>
-
+        <app-logout isMobile="true"></app-logout>
     </ul>
 </nav>
