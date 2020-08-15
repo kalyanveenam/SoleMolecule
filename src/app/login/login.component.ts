@@ -17,9 +17,9 @@ export class LoginComponent {
        if(response){
         console.log('response is '+JSON.stringify(response))
         this.router.navigate(['home']);
-        localStorage.setItem("token",response['token']['token']);
-        localStorage.setItem("name",response['userDetails']['name']);
-        localStorage.setItem("email",response['userDetails']['email']);
+        localStorage.setItem("token",response['data']['token']['token']);
+        localStorage.setItem("name",response['data']['userDetails']['name']);
+        localStorage.setItem("email",response['data']['userDetails']['email']);
         localStorage.setItem("isLoggedIn","true");
        }
      })

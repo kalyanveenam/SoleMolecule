@@ -13,6 +13,13 @@ export class HttpConnect {
       { headers: { 'Content-Type': 'application/json' } }
     );
   };
+  logout = (token) => {
+    return this.http.post(
+      'http://localhost:3001/api/v1/user/logout',
+      {},
+      { headers: { 'Authorization': token} }
+    );
+  };
   signup = (name, email, phoneno, password) => {
     return this.http.post(
       'http://localhost:3001/api/v1/user/signup',
