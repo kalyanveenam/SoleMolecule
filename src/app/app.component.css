@@ -1,43 +1,49 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
-
 .navbar-custom {
-  color: #ffffff;
-  background-color: #666666;
-  position: fixed;
-  z-index: 500;
-  top: 0px;
-  width: 100%;
+    color: #ffffff;
+    background-color: #000000;
+    position: fixed;
+    z-index: 500;
+    top: 0px;
+    width: 100%;
+    box-shadow: 0px 8px 10px 10px #11888888;
 }
-
 
 .navbar navbar-expand-lg navbar-light bg-light navbar-custom {
-  background-color: rgb(246, 243, 243);
+    background-color: rgb(246, 243, 243);
 }
-.collapse navbar-collapse {
-  background-color: rgb(223, 223, 223);
-}
-.firstname {
-  color: rgb(243, 243, 243);
-  font-family: "Pacifico";
-}
-h4 {
-  max-width: 10vh;
-  font-family: cursive;
-}
-.items {
-  float: right;
 
+.collapse navbar-collapse {
+    background-color: rgb(223, 223, 223);
 }
+
+.firstname {
+    color: rgb(243, 243, 243);
+    font-family: "Pacifico";
+}
+
+h4 {
+    max-width: 10vh;
+    font-family: cursive;
+}
+
+.items {
+    float: right;
+}
+
 .nav-link:hover {
-  background-color: skyblue;
+    background-color: skyblue;
 }
-link{
-  color: aqua !important;
+
+link {
+    color: aqua !important;
 }
-nav .navbar-nav li a{
-  color: aqua !important;
-  font-weight: bold;
+
+nav .navbar-nav li a {
+    color: aqua !important;
+    font-weight: bold;
 }
+
 .lastName {
-  color: aqua;
+    color: aqua;
 }
