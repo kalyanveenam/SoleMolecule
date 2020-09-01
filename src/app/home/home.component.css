@@ -813,11 +813,6 @@ p {
     font-family: "Droid Sans";
 }
 
-.whatsapp {
-    background-image: url(../../assets/whatsapp.svg);
-    background-size: cover;
-}
-
 .twitter {
     background-image: url(../../assets/twitter.png);
     background-size: contain;
